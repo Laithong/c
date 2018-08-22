@@ -1,6 +1,6 @@
 
 
-                  //              c++ programming
+                  //            c programming
 
 
 
@@ -240,21 +240,84 @@ int main()
  /*   
 
 int main()
-{
-
-	
-	
+{	
 	char *m[]={"January","February","March","April","April","June",
 	            "July","August","September","October","November","December"};
 	 int i;
      scanf("%d",&i);
 		printf ("%s\n",m[i-1]);
-	
-
-
-
 
 */
+	
+	
+	/*
+	 main(){
+FILE *fp;
+char* str = "string";
+int x = 10;
+
+fp=fopen("C:/Users/LaiThon/Desktop/cpp/more c/test.txt", "a");
+if(fp == NULL);
+
+fprintf(fp, "This is a string which is written to a file\n");
+fprintf(fp, "The string has %d words and keyword %s\n", x, str);
+fclose(fp);
+}
+*/
+	
+	
+	/*#define LEN 256
+int main ()
+{
+   FILE * fp;
+   int i;
+   fp = fopen ("C:/Users/LaiThong/Desktop/cpp/more c/test.html","w");
+       fprintf (fp,"hi");
+   fclose (fp);
+   return 0;
+}
+*/
+	
+	
+	/*
+	#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 80
+main(){
+	char text[80];
+	FILE*fp;
+	fp=fopen("C:/Users/LaiThong/Desktop/A.pdf","r");
+	if(fp==NULL){
+		printf ("Erro");
+	}
+	while(fgets(text,SIZE,fp))
+	printf("%s",text);
+	fclose(fp);
+	getchar();
+}
+*/
+	
+	/*
+	main(){
+	FILE*fp;
+	int num;
+	scanf("%d",&num);
+	fp=fopen("C:/Users/LaiThong/Desktop/cpp//scan.txt","w");
+    fprintf(fp,"%d",num);
+	fclose(fp);
+	getchar();
+}
+*/
+	
+	/*
+	main(){
+	FILE*fp;
+	fp=fopen("C:/sers/aiThong/esktop/write.txt","w");
+	fputs("hello",fp);
+	fclose(fp);
+*/
+	
+	
 getch();
 }
 
